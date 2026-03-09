@@ -29,28 +29,34 @@ Nature App provides:
 
 ```text
 lib/
-	constants/
-		app_strings.dart
-	data/
-		nature_data.dart
-	models/
-		nature_model.dart
-	screens/
-		details/
-			nature_details_screen.dart
-		favorite/
-			favorite_screen.dart
-		home/
-			home_screen.dart
-		main/
-			main_screen.dart
-		profile/
-			profile_screen.dart
-		settings/
-			settings_screen.dart
-	widgets/
-		nature_list_tile_widget.dart
-	main.dart
+|- constants/
+|  |- app_sizes.dart
+|  |- app_strings.dart
+|  \- theme/
+|     |- app_colors.dart
+|     \- app_theme.dart
+|- data/
+|  \- nature_data.dart
+|- models/
+|  \- nature_model.dart
+|- screens/
+|  |- details/
+|  |  \- nature_details_screen.dart
+|  |- favorite/
+|  |  \- favorite_screen.dart
+|  |- home/
+|  |  \- home_screen.dart
+|  |- main/
+|  |  \- main_screen.dart
+|  |- profile/
+|  |  \- profile_screen.dart
+|  \- settings/
+|     \- settings_screen.dart
+|- utils/
+|  \- app_route.dart
+|- widgets/
+|  \- nature_list_tile_widget.dart
+\- main.dart
 ```
 
 ## Architecture Notes

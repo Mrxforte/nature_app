@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:nature_app/constants/app_strings.dart';
 import 'package:nature_app/data/nature_data.dart';
-import 'package:nature_app/screens/main/main_screen.dart';
 import 'package:nature_app/constants/theme/app_theme.dart';
+import 'package:nature_app/utils/app_route.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -24,7 +24,8 @@ class MyApp extends StatelessWidget {
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: ThemeMode.system,
-      home: const MainScreen(),
+      initialRoute: AppRoute.main,
+      onGenerateRoute: AppRoute.generateRoute,
       debugShowCheckedModeBanner: false,
     );
   }
