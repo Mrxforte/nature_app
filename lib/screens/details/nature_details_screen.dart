@@ -46,7 +46,9 @@ class NatureDetailsScreeen extends StatelessWidget {
                     SizedBox(height: 8),
                     Text(
                       nature.description,
-                      style: const TextStyle(fontSize: 16),
+                      textAlign: TextAlign.justify,
+
+                      style: const TextStyle(fontSize: 16, letterSpacing: 0.2),
                     ),
                   ],
                 ),
